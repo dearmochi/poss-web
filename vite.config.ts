@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.GITHUB_PAGES ? "poss-web" : "/",
   plugins: [react()],
   resolve: {
     alias: {
